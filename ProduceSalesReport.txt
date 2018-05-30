@@ -1,0 +1,24 @@
+Produce a Sales Report
+
+INPUT: 
+customer's number and name, a sales amount and a tax code
+
+PROCESSING:
+Display heading
+DOWHILE more records exist
+Receive customer's number and name, a sales amount and a tax code
+IF taxCode=0
+	taxAmount = 0
+ELSE IF taxCode = 1
+	taxAmount = salesAmount * 3/100
+ELSE IF taxCode = 2
+	taxAmount = salesAmount * 5/100
+ENDIF
+totalAmount = salesAmount + taxAmount
+display customer number, name, sales amount, sales tax and the total amount due
+move to next line
+ENDDO
+
+
+OUTPUTS:
+heading "Sales Report", customer number, name, sales amount, sales tax and the total amount due
